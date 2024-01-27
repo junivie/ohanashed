@@ -23,7 +23,7 @@
 
     <style>
     .item {
-        position: relative;
+        overflow: hidden;
     }
     
     .property-img {
@@ -32,29 +32,16 @@
     
     .hover-img {
         display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: scale(1);
-        transition: transform 0.3s ease-in-out;
     }
     
     .property-img:hover .hover-img {
         display: block;
-        transform: scale(1);
     }
     
     .property-img:hover .original-img {
         display: none;
     }
-    
-    .original-img {
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .property-img:hover .original-img {
-        transform: scale(0);
-    }
+
     </style>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
