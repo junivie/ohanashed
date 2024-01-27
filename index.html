@@ -22,15 +22,25 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <style>
-      .preventive:hover img {
-      content: url('services/preventive.png');
-      transition: all 0.3s ease;
-      }
-
-      .preventive:hover img {
-      content: url('services/preventive.png');
-      transition: all 0.3s ease;
-      }
+    .property-img {
+       position: relative;
+       display: block;
+    }
+    
+    .hover-img {
+       display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+    }
+    
+    .property-img:hover .hover-img {
+       display: block;
+    }
+    
+    .property-img:hover .original-img {
+       display: none;
+    }
 
     </style>
 
@@ -238,13 +248,16 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6">
-          <div class="item preventive">
-            <a href="contact.html"><img src="services/precareserv.jpg" alt=""></a><hr>
-            <h4 style="text-align: center;"><a href="contact.html">Preventive Care</a></h4>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/precareserv.jpg" alt="" class="original-img">
+                 <img src="services/preventive.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Preventive Care</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="item emergency">
@@ -451,20 +464,6 @@
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script>
-  $(document).ready(function () {
-    $(".item").hover(
-      function () {
-        // Hover in
-        $(this).find("img").attr("src", "path-to-your-hover-image.jpg");
-      },
-      function () {
-        // Hover out
-        $(this).find("img").attr("src", "original-image.jpg");
-      }
-    );
-  });
-  </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/isotope.min.js"></script>
