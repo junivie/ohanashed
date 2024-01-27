@@ -20,6 +20,29 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+    <style>
+    .item {
+        overflow: hidden;
+    }
+    
+    .property-img {
+        display: block;
+    }
+    
+    .hover-img {
+        display: none;
+    }
+    
+    .property-img:hover .hover-img {
+        display: block;
+    }
+    
+    .property-img:hover .original-img {
+        display: none;
+    }
+
+    </style>
+
   </head>
 
 <body>
@@ -92,105 +115,124 @@
     </div>
   </div>
 
-  <div class="section properties" style="text-align: center;">
+  <div class="properties section">
     <div class="container">
-      <div class="row properties-box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
-          <div class="item">
-            <a href="#"><img src="services/preventive.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Preventive Care</a></h4><br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Services</h6>
+            <h2>We Provide The Best Care and Environment for Your Pets</h2>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
-          <div class="item">
-            <a href="#"><img src="services/emergency.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Emergency Care</a></h4>
-            <br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/precareserv.jpg" alt="" class="original-img">
+                 <img src="services/preventive.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Preventive Care</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
-          <div class="item">
-            <a href="#"><img src="services/surgery.png" alt=""></a>
-            <hr>
-             <h4><a href="#">Surgery Services</a></h4>
-             <br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/emergencyserv.jpg" alt="" class="original-img">
+                 <img src="services/emergency.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Emergency Care</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
-          <div class="item">
-            <a href="#"><img src="services/diagnostic.png" alt=""></a>
-            <hr>
-           <h4><a href="#">Diagnostic Services</a></h4>
-          <br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/surgeryserv.jpg" alt="" class="original-img">
+                 <img src="services/surgery.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Surgery Services</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
-          <div class="item">
-            <a href="#"><img src="services/inpatient.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Outpatient & Inpatient</a></h4>
-            <br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/diagnosticserv.jpg" alt="" class="original-img">
+                 <img src="services/diagnostic.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Diagnostic Services</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
-          <div class="item">
-            <a href="#"><img src="services/behavioral.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Behavioral Counseling</a></h4>
-            ><br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/behaviorserv.jpg" alt="" class="original-img">
+                 <img src="services/behavioral.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Behavioral Counseling</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
-          <div class="item">
-            <a href="#"><img src="services/exotic.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Avian and Exotic Pet Care</a></h4>
-            <br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/inpatientserv.jpg" alt="" class="original-img">
+                 <img src="services/inpatient.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Inpatient Clinic Care</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
-          <div class="item">
-            <a href="#l"><img src="services/Onlineconsultation.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Online Consultation</a></h4><br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/exoticserv.jpg" alt="" class="original-img">
+                 <img src="services/exotic.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Avian and Exotic Pet Care</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
-          <div class="item">
-            <a href="#"><img src="services/grooming.png" alt=""></a>
-            <hr>
-            <h4><a href="#">Grooming and Boarding</a></h4>
-            <br>
-            <div class="main-button">
-              <a href="contact.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/onlineconsultserv.jpg" alt="" class="original-img">
+                 <img src="services/Onlineconsultation.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Online Consultation</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+           <div class="item">
+              <a href="contact.html" class="property-img">
+                 <img src="services/groomingserv.jpg" alt="" class="original-img">
+                 <img src="services/grooming.png" alt="" class="hover-img">
+              </a><hr>
+              <h4 style="text-align: center;"><a href="contact.html">Grooming and Boarding</a></h4>
+              <div class="main-button">
+                 <a href="contact.html">Schedule a visit</a>
+              </div>
+           </div>
         </div>
       </div>
     </div>
