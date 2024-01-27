@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+      .item .preventive:hover img {
+      content: url('services/preventive.png');
+      transition: all 0.3s ease;
+      }
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     
   </head>
 
@@ -223,7 +233,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item preventive">
             <a href="contact.html"><img src="services/preventive.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Preventive Care</a></h4>
             <div class="main-button">
@@ -232,7 +242,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item emergency">
             <a href="contact.html"><img src="services/emergency.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Emergency Care</a></h4>
             <div class="main-button">
@@ -241,7 +251,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item surgery">
             <a href="contact.html"><img src="services/surgery.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Surgery Services</a></h4>
             <div class="main-button">
@@ -250,7 +260,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item diagnostic">
             <a href="contact.html"><img src="services/diagnostic.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Diagnostic Services</a></h4>
             <div class="main-button">
@@ -259,7 +269,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item behavioral">
             <a href="contact.html"><img src="services/behavioral.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Behavioral Counseling</a></h4>
             <div class="main-button">
@@ -268,7 +278,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item inpatient">
             <a href="contact.html"><img src="services/inpatient.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Outpatient and Inpatient Clinic Care</a></h4>
             <div class="main-button">
@@ -277,7 +287,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item exotic">
             <a href="contact.html"><img src="services/exotic.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Avian and Exotic Pet Care</a></h4>
             <div class="main-button">
@@ -286,7 +296,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item online">
             <a href="#"><img src="services/Onlineconsultation.png" alt=""></a>
             <hr>
             <h4 style="text-align: center;"><a href="#">Online Consultation</a></h4><br>
@@ -296,7 +306,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
+          <div class="item grooming">
             <a href="contact.html"><img src="services/grooming.png" alt=""></a><hr>
             <h4 style="text-align: center;"><a href="contact.html">Grooming and Boarding</a></h4>
             <div class="main-button">
@@ -436,6 +446,20 @@
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
+  <script>
+  $(document).ready(function () {
+    $(".item").hover(
+      function () {
+        // Hover in
+        $(this).find("img").attr("src", "path-to-your-hover-image.jpg");
+      },
+      function () {
+        // Hover out
+        $(this).find("img").attr("src", "original-image.jpg");
+      }
+    );
+  });
+  </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/isotope.min.js"></script>
